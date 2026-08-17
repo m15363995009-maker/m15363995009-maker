@@ -6,11 +6,12 @@ I build small, read-only tools that help maintainers review pull requests withou
 
 | Project | What it does | Reproducible entry point |
 | --- | --- | --- |
-| [codex-maintainer-automation](https://github.com/m15363995009-maker/codex-maintainer-automation) | GitHub Action and CLI for deterministic PR review, with optional OpenAI Responses API support and stable JSON output | [v0.4.0 release](https://github.com/m15363995009-maker/codex-maintainer-automation/releases/tag/v0.4.0) / [one-minute pilot](https://github.com/m15363995009-maker/codex-maintainer-automation/discussions/24) |
+| [codex-maintainer-automation](https://github.com/m15363995009-maker/codex-maintainer-automation) | Published GitHub Marketplace Action and CLI for deterministic PR review, with optional OpenAI Responses API support and stable JSON output | [Marketplace](https://github.com/marketplace/actions/codex-maintainer-pr-review) / [v0.4.0 release](https://github.com/m15363995009-maker/codex-maintainer-automation/releases/tag/v0.4.0) / [one-minute pilot](https://github.com/m15363995009-maker/codex-maintainer-automation/discussions/24) |
 | [claude-builders-bounty](https://github.com/m15363995009-maker/claude-builders-bounty) | Read-only PR review CLI for Claude Code and heuristic workflows, including a network-free synthetic fixture | [v0.4.0 release](https://github.com/m15363995009-maker/claude-builders-bounty/releases/tag/v0.4.0) / [one-minute pilot](https://github.com/m15363995009-maker/claude-builders-bounty/discussions/16) |
 
 ![codex-maintainer-automation CI](https://github.com/m15363995009-maker/codex-maintainer-automation/actions/workflows/ci.yml/badge.svg)
 ![claude-builders-bounty CI](https://github.com/m15363995009-maker/claude-builders-bounty/actions/workflows/ci.yml/badge.svg)
+[![Codex Maintainer PR Review on GitHub Marketplace](https://img.shields.io/badge/GitHub%20Marketplace-Codex%20Maintainer%20PR%20Review-2ea44f?logo=github)](https://github.com/marketplace/actions/codex-maintainer-pr-review)
 
 ## Try without credentials
 
