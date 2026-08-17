@@ -47,3 +47,10 @@ node bin/claude-review.js --fixture fixtures/sample-pr.json --mode heuristic --o
 - [CLAUDE structured pilot report](https://github.com/m15363995009-maker/claude-builders-bounty/issues/new?template=pilot_report.yml)
 
 The most useful contribution is a reproducible result: what you ran, what happened, whether the output helped, and one concrete improvement.
+
+## Contribute a focused improvement
+
+- [CODEX: add a JSON-to-job-summary consumer example](https://github.com/m15363995009-maker/codex-maintainer-automation/issues/25)
+- [CLAUDE: add cross-platform offline fixture CI](https://github.com/m15363995009-maker/claude-builders-bounty/issues/18)
+
+Both are bounded `good first issue` tasks with explicit acceptance criteria. They are unpaid and voluntary; please choose a task because it is useful, not to manufacture activity.
