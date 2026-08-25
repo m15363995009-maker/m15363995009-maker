@@ -6,7 +6,7 @@ I build small, read-only tools that help maintainers review pull requests withou
 
 | Project | What it does | Reproducible entry point |
 | --- | --- | --- |
-| [codex-maintainer-automation](https://github.com/m15363995009-maker/codex-maintainer-automation) | Published GitHub Marketplace Action and CLI for deterministic PR review, with optional OpenAI Responses API support and stable JSON output | [Marketplace](https://github.com/marketplace/actions/codex-maintainer-pr-review) / [v0.4.0 release](https://github.com/m15363995009-maker/codex-maintainer-automation/releases/tag/v0.4.0) / [one-minute pilot](https://github.com/m15363995009-maker/codex-maintainer-automation/discussions/24) |
+| [codex-maintainer-automation](https://github.com/m15363995009-maker/codex-maintainer-automation) | Checkout-free GitHub Action and CLI for deterministic PR review, producing both human-readable Markdown and schema-versioned JSON | [Marketplace](https://github.com/marketplace/actions/codex-maintainer-pr-review) / [v0.5.0 release](https://github.com/m15363995009-maker/codex-maintainer-automation/releases/tag/v0.5.0) / [one-minute pilot](https://github.com/m15363995009-maker/codex-maintainer-automation/issues/16) |
 | [claude-builders-bounty](https://github.com/m15363995009-maker/claude-builders-bounty) | Read-only PR review CLI for Claude Code and heuristic workflows, including a network-free synthetic fixture | [v0.4.0 release](https://github.com/m15363995009-maker/claude-builders-bounty/releases/tag/v0.4.0) / [one-minute pilot](https://github.com/m15363995009-maker/claude-builders-bounty/discussions/16) |
 
 ![codex-maintainer-automation CI](https://github.com/m15363995009-maker/codex-maintainer-automation/actions/workflows/ci.yml/badge.svg)
@@ -15,13 +15,18 @@ I build small, read-only tools that help maintainers review pull requests withou
 
 ## Try without credentials
 
-CODEX workflow with schema-versioned JSON output:
+CODEX v0.5.0 can generate Markdown and JSON in one read-only run:
 
 ```bash
-git clone --branch v0.4.0 --depth 1 https://github.com/m15363995009-maker/codex-maintainer-automation.git
+git clone --branch v0.5.0 --depth 1 https://github.com/m15363995009-maker/codex-maintainer-automation.git
 cd codex-maintainer-automation
 npm ci --ignore-scripts
-node bin/codex-maintainer.js --fixture fixtures/sample-pr.json --mode heuristic --dry-run --json
+node bin/codex-maintainer.js \
+  --fixture fixtures/sample-pr.json \
+  --mode heuristic \
+  --dry-run \
+  --out review.md \
+  --json-out review.json
 ```
 
 Claude workflow with a network-free fixture:
